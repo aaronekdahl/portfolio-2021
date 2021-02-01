@@ -19,7 +19,10 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/light.css">
+  <link rel="stylesheet" href="css/dark.css">
+  <link id="theme" rel="stylesheet"
+        type="text/css" href="light.css" />
 
   <meta name="theme-color" content="#fafafa">
 
@@ -47,6 +50,13 @@
     </a>
 
     <h1 class="logo">Aaron Ekdahl</h1>
+    <button onclick="toggleTheme('light.css')">
+        Light
+    </button>
+
+    <button onclick="toggleTheme('dark.css')">
+        Dark
+    </button> 
 
     <nav id="main-menu" class="main-menu" aria-label="Main menu">
       <a href="#main-menu-toggle"
